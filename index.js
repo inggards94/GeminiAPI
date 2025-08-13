@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 // Import and use the /generate-text router
-const generateTextRoute = require('./router/generateTextRoute');
+const generateTextRoute = require('./router/generateRoute');
 app.use('/', generateTextRoute);
 
 const PORT = 3000;
